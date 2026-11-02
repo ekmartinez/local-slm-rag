@@ -1,0 +1,5 @@
+paperdb/
+text_chunks_and_embeddings_df.csv
+.venv/
+__pycache__/
+.ipynb_checkpoints/

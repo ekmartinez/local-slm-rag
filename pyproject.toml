@@ -1,0 +1,27 @@
+[project]
+name = "rag-slm"
+version = "0.1.0"
+description = "Retrieval Augmented Generation"
+readme = "README.md"
+authors = [
+    { name = "the_etc", email = "the_etc@pygamelabs.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "ipykernel>=7.4.0",
+    "jupyterlab>=4.6.5",
+    "jupyterlab-vim>=4.1.4",
+    "lancedb>=0.41.0",
+    "numpy>=2.5.4",
+    "pandas>=3.1.0",
+    "pymupdf>=2.0",
+    "spacy>=3.8.18",
+    "tqdm>=4.70.1",
+]
+
+[project.scripts]
+rag-slm = "rag_slm:main"
+
+[build-system]
+requires = ["uv_build>=0.13.0,<0.14.0"]
+build-backend = "uv_build"
